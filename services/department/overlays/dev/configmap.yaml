@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: department-config
+data:
+  application.yml: |
+    spring:
+      application:
+        name: department-service
+      profiles:
+        active: dev
+    server:
+      port: 8081
+    logging:
+      level:
+        root: DEBUG
