@@ -16,9 +16,9 @@ spec:
     spec:
       containers:
       - name: config-server
-        image: config-server:latest
+        image: config-server:latest  # TODO: Replace with specific version tag for production
         ports:
         - containerPort: 8888
         env:
         - name: SPRING_PROFILES_ACTIVE
-          value: "native"
+          value: "native"  # Uses local filesystem/classpath for config files
