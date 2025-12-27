@@ -1,7 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: employee-config
-data:
-  employee-dev.properties: |
-    poc.environment.msg=this is employee DEV environment
