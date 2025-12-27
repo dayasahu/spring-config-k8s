@@ -3,14 +3,5 @@ kind: ConfigMap
 metadata:
   name: employee-config
 data:
-  application.yml: |
-    spring:
-      application:
-        name: employee-service
-      profiles:
-        active: prod
-    server:
-      port: 8080
-    logging:
-      level:
-        root: INFO
+  employee-prod.properties: |
+    poc.environment.msg=this is employee PROD environment

@@ -3,9 +3,9 @@ kind: ConfigMap
 metadata:
   name: employee-config
 data:
-  application.yml: |
-    spring:
-      application:
-        name: employee-service
-    server:
-      port: 8080
+  employee.properties: |
+    spring.application.name=employee
+    server.port=8080
+    management.endpoints.web.base-path=/actuator
+    management.endpoints.web.exposure.include=health,info,env
+    spring.cloud.config.fail-fast=true
