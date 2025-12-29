@@ -2,10 +2,10 @@ resources:
   - ../../base
 
 configMapGenerator:
-  - name: department-config
+  - name: apigateway-config
     behavior: merge
     files:
-      - department-dev.properties
+      - apigateway-dev.properties
 
 generatorOptions:
   disableNameSuffixHash: true

@@ -1,5 +1,5 @@
 configMapGenerator:
-  - name: employee-config
+  - name: apigateway-config
     files:
       - apigateway.properties
 

@@ -5,7 +5,7 @@ configMapGenerator:
   - name: employee-config
     behavior: merge
     files:
-      - employee-dev.properties
+      - apigateway-dev.properties
 
 generatorOptions:
   disableNameSuffixHash: true
