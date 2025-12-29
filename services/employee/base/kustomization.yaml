@@ -1,7 +1,7 @@
 configMapGenerator:
   - name: employee-config
     files:
-      - apigateway.properties
+      - employee.properties
 
 generatorOptions:
   disableNameSuffixHash: true
