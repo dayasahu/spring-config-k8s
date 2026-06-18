@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: employee-config
+  labels:
+    app: employee
+data:
+  application.yml: |
+    spring:
+      application:
+        name: employee-service
+      cloud:
+        config:
+          uri: http://config-server:8888
